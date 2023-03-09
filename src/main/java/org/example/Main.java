@@ -15,11 +15,9 @@ public class Main {
 
         saveContacts(contacts);
 
-        ArrayList<Contacts> retrievedContacts = loadContacts(contacts);
+        String retrievedContacts = loadContacts();
         System.out.println("Retrieved Contacts: ");
-        for (Contacts contact : retrievedContacts) {
-            System.out.println(contact);
-        }
+        System.out.println(retrievedContacts);
 
     }
 }
